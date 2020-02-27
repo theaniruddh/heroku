@@ -3,8 +3,6 @@ Options All -Indexes
 AddDefaultCharset utf-8
 ServerSignature Off
 RewriteEngine on
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
 ErrorDocument 404 /404.php

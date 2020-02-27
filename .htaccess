@@ -5,5 +5,5 @@ ServerSignature Off
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
-ErrorDocument 404 "404 Not Found Go Home"
+ErrorDocument 404 "404 Not Found Go <a href="https://https://qby.herokuapp.com/">Home</a>"
 </IfModule>
